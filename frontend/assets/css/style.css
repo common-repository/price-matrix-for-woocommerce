@@ -1,0 +1,128 @@
+.wppm-enter-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    z-index: 1;
+}
+.wppm-enter-table .attribute-name {
+	background-color: #fafafa;
+    padding: 12px 0 10px 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.has-two-attribute .attribute-name {
+    width: 25%;
+}
+.wppm-enter-table .attribute-name.center {
+    text-align: center;
+    padding-left: 0;
+    white-space: nowrap;
+}
+.wppm-enter-table td {
+    border: 1px solid #eee;
+	padding: 10px 15px !important;
+}
+.wppm-enter-table .attribute-price {
+    text-align: center;
+    background: #fff;
+    white-space: nowrap;
+}
+.wppm-enter-table .attribute-price:hover {
+	background-color: #fafafa;
+	cursor: pointer;
+}
+.wppm-enter-table .attribute-price del {
+    margin-right: 10px;
+    font-weight: 400;
+}
+.wppm-enter-table .attribute-price ins {
+    text-decoration: none;
+    background: transparent;
+    font-weight: 400;
+}
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+    margin-bottom: 30px !important;
+}
+
+.has-price-matrix.pm-hide-dropdown .variations_form table.variations {
+	display: none;
+}
+body.pm-position-two .single_variation_wrap {
+	clear: both;
+}
+.pm-disable-qty input {
+	cursor: not-allowed;
+}
+.pm-disable-qty input[type=number]::-webkit-inner-spin-button, 
+.pm-disable-qty input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.tippy-popper table > tbody > tr > td {
+	padding: 5px 15px;
+    text-align: left;
+    border: 1px solid #eee;
+}
+.tippy-popper table > tbody > tr {
+	border-bottom: 1px dashed #eee;
+}
+
+.tippy-tooltip {
+    padding: 0 !important;
+}
+.tippy-tooltip-content table{
+    margin-bottom: 0 !important;
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg)
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.blockUI.blockOverlay::before {
+    height: 30px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -.5em;
+    margin-top: -.5em;
+    content: '';
+    -webkit-animation: spin 1s ease-in-out infinite;
+    -moz-animation: spin 1s ease-in-out infinite;
+    animation: spin 1s ease-in-out infinite;
+    background: url(../images/loader.svg) center center;
+    background-size: cover;
+    line-height: 1;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(0,0,0,.75);
+}
+
+.wppm-notice-content {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: .75rem 1.25rem;
+    font-size: 1rem;
+    border-radius: .25rem;	
+}
